@@ -1,32 +1,12 @@
 <!doctype html>
-<<<<<<< HEAD
-<html ng-app="app">
-=======
 <html ng-app="appSinglePage">
->>>>>>> master
    <head>
       <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
       <meta http-equiv="content-language" content="pt-br" />
       <title>AngularJS: Single Page com ngView e ngRoute</title>
-<<<<<<< HEAD
       <link rel="stylesheet" href="http://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css" />
    </head>
- 
-   <body>
-      <ul class="nav nav-tabs">
-         <li ng-class="{active: activetab == '/'}"><a href="/home">Home</a></li>
-         <li ng-class="{active: activetab == '/sobre'}"><a href="/sobre">Sobre</a></li>
-         <li ng-class="{active: activetab == '/contato'}"><a href="/contato">Contato</a></li>
-      </ul>
- 
-      <div ng-view></div>
- 
-      <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.2.8/angular.min.js"></script>
-      <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.2.0rc1/angular-route.min.js"></script>
- 
-=======
 
-   </head>
    <body>
       <ul class="nav nav-tabs">
          <li ng-class="{active: activetab == '/'}"><a ng-href="/home">Home</a></li>
@@ -36,7 +16,6 @@
       <div ng-view></div>
       <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.22/angular.min.js"></script>
       <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.22/angular-route.min.js"></script>
->>>>>>> master
       <script src="app/app.js"></script>
       <script src="app/controllers/controllers.js"></script>
    </body>
