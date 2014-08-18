@@ -20,6 +20,5 @@ app.config(function($routeProvider, $localtionProvider){
 		controller : 'ContatoCtrl',
 	})
 
-	.otherwise ({redirectTo: '/'})/
+	.otherwise ({redirectTo: '/'});
 });
-}
