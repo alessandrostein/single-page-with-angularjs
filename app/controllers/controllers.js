@@ -1,12 +1,12 @@
-app.controller('HomeCtrl', function($rootScope, $location){
-	$rootScope.activetab = $location.path();
+angular.module('appSinglePage').controller('HomeCtrl', function($scope){
+	$scope.activetab = "/";
 });
 
-app.controller('SobreCtrl', function($rootScope, $location){
-	$rootScope.activetab = $location.path();
+angular.module('appSinglePage').controller('SobreCtrl', function($scope){
+	$scope.activetab = "/sobre";
 });
 
-app.controller('ContatoCtrl', function($rootScope, $location){
-	$rootScope.activetab = $location.path();
+angular.module('appSinglePage').controller('ContatoCtrl', function($scope){
+	$scope.activetab = "/contato";
 });
 

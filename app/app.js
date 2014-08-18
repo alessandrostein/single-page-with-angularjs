@@ -1,24 +1,14 @@
-var app = angular.module('app', ['ngRoute']);	
+angular.module('appSinglePage', ['ngRoute']);
 
-app.config(function($routeProvider, $localtionProvider){
-	$localtionProvider.html5Mode(true);
-
-	$routeProvider
-
-	.when('/', {
+angular.module('appSinglePage').config(function($routeProvider){
+	$routeProvider.when('/', {
 		templateUrl: 'app/views/home.html',
 		controller : 'HomeCtrl',
-	})
-
-	.when('/sobre', {
+	}).when('/sobre', {
 		templateUrl: 'app/views/sobre.html',
 		controller : 'SobreCtrl',
-	})
-
-	.when('/contato', {
+	}).when('/contato', {
 		templateUrl: 'app/views/contato.html',
 		controller : 'ContatoCtrl',
-	})
-
-	.otherwise ({redirectTo: '/'});
+	}).otherwise ({redirectTo: '/'});
 });
